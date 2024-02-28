@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+:root
+{
+    --white: #fff;
+    --silverClaro: #ffffff4d;
+    --silverEscuro: #3b3b3b;
+    --purpleClaro: #8D15B7;
+    --purpleEscuro:  #630285;
+    --purpleDestaque:  #FF00B8;
+}
+
+.flutter
+{
+    position: fixed;
+    left: 87%;
+    top: 87%;
+
+    border-radius: 15px;
+
+    background: var(--silverClaro);
+    padding: 10px 30px;
+}
+
+.flutter .linkflutter
+{
+    color: var(--white);
+    font-size: 2em;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.25s;
+}
+
+.flutter .linkflutter:hover
+{
+    color: var(--silverClaro);
+}
+
+.banner {
+    width: 100%;
+    height: 100vw;
+    background: url(./assets/Image/background.png), linear-gradient( var(--purpleClaro), var(--purpleEscuro));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 120%;
+    z-index: 0;
+}
+
+.banner header {
+    background: var(--silverClaro);
+}
+
+.banner header nav
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 9vh;
+    background: transparent;
+}
+
+.banner header nav #logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+header nav .nav-list
+{
+    display: flex;
+}
+
+header nav .nav-list .nav-item
+{
+    list-style: none;
+    margin-left: 30px;
+}
+
+header nav .nav-list .nav-item a
+{
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: var(--white);
+    transition: 0.25s;
+}
+
+header nav .nav-list .nav-item #loginUser{
+    font-weight: 700;
+    margin: 0px 0px 0px 30px;
+}
+header nav .nav-list .nav-item #iconEntrar{
+    font-size: 1.5rem;
+    margin: 0rem 0.2rem;
+}
+
+header nav .nav-list .nav-item a:hover
+{
+    color: var(--purpleDestaque);
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80vh;
+    padding: 10vh;
+}
+
+.content .contentIlustra #imagemIlus
+{
+
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.content .contentIlustra #imagemIlus:hover
+{
+    transform: scale(1.2);
+}
+
+.content .contentText #tituloPrincipal{
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.content .contentText #descricao
+{
+    color: var(--white);
+}
+
+.content .contentText a:hover
+{
+    color: var(--silverClaro);
+}
+
+.content .contentText .iconRedes
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px 20px;
+
+    padding: 10px 0px;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+
+.content .contentText #CTA{
+    display:  inline-block;
+    margin: 0.5em 0em;
+    padding: 0.8rem 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 3px solid var(--white);
+    border-radius: 15px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.25s;
+
+}
+
+.content .contentText #CTA:hover
+{
+    color: var(--white);
+    background: var(--purpleDestaque);
+    border: 3px solid var(--purpleDestaque);
+}
+ 
+.banner .contentSecao #tituloSecao
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: var(--white);
+}
