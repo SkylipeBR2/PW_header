@@ -17,6 +17,39 @@
     --purpleDestaque:  #FF00B8;
 }
 
+
+/* Elementos prontos */
+#descricao
+{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1rem 0rem;
+}
+
+#CTA{
+    display:  inline-block;
+    margin: 0.5em 0em;
+    padding: 0.8rem 5rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: 3px solid var(--white);
+    border-radius: 15px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.25s;
+
+}
+
+#CTA:hover
+{
+    color: var(--white);
+    background: var(--purpleDestaque);
+    border: 3px solid var(--purpleDestaque);
+}
+
+
+
+/* barra fixa ajuda e suporte */
 .flutter
 {
     position: fixed;
@@ -42,6 +75,12 @@
 {
     color: var(--silverClaro);
 }
+
+/*  
+Banner (main) principal
+-
+Junto com menu
+*/
 
 .banner {
     width: 100%;
@@ -153,33 +192,109 @@ header nav .nav-list .nav-item a:hover
     text-decoration: none;
 }
 
-
-.content .contentText #CTA{
-    display:  inline-block;
-    margin: 0.5em 0em;
-    padding: 0.8rem 5rem;
-    font-size: 1.3rem;
-    font-weight: bold;
-    border: 3px solid var(--white);
-    border-radius: 15px;
-    color: var(--white);
-    text-decoration: none;
-    transition: 0.25s;
-
-}
-
-.content .contentText #CTA:hover
-{
-    color: var(--white);
-    background: var(--purpleDestaque);
-    border: 3px solid var(--purpleDestaque);
-}
  
-.banner .contentSecao #tituloSecao
+/* segunda seção */
+.banner .contentSecao 
+{
+    margin: 4rem 0rem;
+}
+
+.banner .contentSecao #tituloSecao 
+{
+    text-align: center;
+    color: var(--white);
+}
+
+.banner .contentSecao .FlexContainer 
 {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 5rem;
+
+    padding: 15rem 0rem;
+}
+
+.banner .contentSecao .FlexContainer .blocoEmprestimo
+{
+    background: var(--white);
+    width: 50vh;
+    border-radius: 15px;
+    padding: 5rem 3rem;
+}
+
+.banner .contentSecao .FlexContainer .blocoEmprestimo .cardFotos
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    margin: 0rem 0rem 3rem 0rem;
+}
+
+.banner .contentSecao .FlexContainer .blocoEmprestimo .cardFotos:nth-child(1)
+{
+    text-align: center;
+} 
+
+.banner .contentSecao .FlexContainer .blocoEmprestimo .cardFotos .img_perfil
+{
+    width: 10rem;
+}
+
+
+.banner .contentSecao .FlexContainer .blocoEmprestimo p
+{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.banner .contentSecao .FlexContainer .blocoInvestimento 
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    width: 60vh;
     color: var(--white);
 }
+
+.banner .contentSecao .FlexContainer .blocoInvestimento #principal2
+{
+    font-size: 3rem;
+}
+
+
+/* Secao de Cards */
+.secaoBeneficios {
+    background: var(--white);
+    padding: 3rem;
+    width: 100%;
+}
+
+.secaoBeneficios > h1
+{
+    font-size: 3rem;
+    text-align: center;
+    color: var(--purpleDestaque);
+}
+
+.secaoBeneficios .cardsBeneficios
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 3rem 0rem;
+}
+
+.secaoBeneficios .cardsBeneficios .card
+{
+    width: 30vh;
+    height: 50vh;
+    background: var(--purpleClaro);
+    border-radius: 15px;
+}
+
