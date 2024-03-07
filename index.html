@@ -6,6 +6,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Banco Hepe</title>
@@ -29,7 +30,7 @@
         <!-- Menu -->
         <header>
             <nav>
-                <a href="" id="logo"><img src="" alt="logo"></a>
+                <a href="" id="logo"><img src="assets/Image/logo.svg" alt="logo" id="img_logo"></a>
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="#">Home</a>
@@ -59,13 +60,14 @@
             <div class="contentText">
                 <h1 id="tituloPrincipal">HEPE</h1>
                 <p id="descricao">O banco digital que é a sua cara!</p>
-                <a href="#" id="CTA">CONFERIR!</a>
+                <!-- <button onclick="topFunction()" id="mybtn">Teste</button> -->
+                <a href="#FlexContainer" id="CTA">CONFERIR!</a>
             </div>
         </div>
         
         <div class="contentSecao">
             <h1 id="tituloSecao">Seção Teste</h1>
-                <div class="FlexContainer">
+                <div class="FlexContainer" id="FlexContainer">
                     <div class="blocoEmprestimo">
                         <div class="cardFotos">
                             <div class="fotoHeloisa">

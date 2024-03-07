@@ -69,6 +69,7 @@
     text-decoration: none;
     list-style: none;
     transition: 0.25s;
+   
 }
 
 .flutter .linkflutter:hover
@@ -109,6 +110,11 @@ Junto com menu
     font-size: 3rem;
     font-weight: 700;
     color: var(--white);
+}
+
+.banner header nav #img_logo
+{
+    width: 100px;
 }
 
 header nav .nav-list
@@ -287,6 +293,7 @@ header nav .nav-list .nav-item a:hover
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    flex-wrap: wrap;
     margin: 3rem 0rem;
 }
 
