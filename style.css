@@ -13,8 +13,11 @@
     --silverClaro: #ffffff4d;
     --silverEscuro: #3b3b3b;
     --purpleClaro: #8D15B7;
+    --purpleClaroHover: #b82aec;
     --purpleEscuro:  #630285;
     --purpleDestaque:  #FF00B8;
+    --blackSecao: #151515;
+    --cinzaForms: #767676;
 }
 
 
@@ -24,6 +27,11 @@
     font-size: 1.2rem;
     font-weight: 300;
     margin: 1rem 0rem;
+}
+
+.linhaBlock
+{
+    display: block;
 }
 
 #CTA{
@@ -45,6 +53,21 @@
     color: var(--white);
     background: var(--purpleDestaque);
     border: 3px solid var(--purpleDestaque);
+}
+
+
+.secaoBeneficios .cardsBeneficios .card #CTA_CARD{
+    display:  inline-block;
+    margin: 0.5em 0em;
+    padding: 0.8rem 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 3px solid var(--white);
+    border-radius: 15px;
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.25s;
+    opacity: 0;
 }
 
 
@@ -140,9 +163,14 @@ header nav .nav-list .nav-item a
 header nav .nav-list .nav-item #loginUser{
     font-weight: 700;
     margin: 0px 0px 0px 30px;
+    text-decoration: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 header nav .nav-list .nav-item #iconEntrar{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin: 0rem 0.2rem;
 }
 
@@ -289,9 +317,10 @@ header nav .nav-list .nav-item a:hover
 
 .secaoBeneficios .cardsBeneficios
 {
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    grid-template-columns: 30vh 30vh 30vh 30vh;
     gap: 3rem;
     flex-wrap: wrap;
     margin: 3rem 0rem;
@@ -299,9 +328,133 @@ header nav .nav-list .nav-item a:hover
 
 .secaoBeneficios .cardsBeneficios .card
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
     width: 30vh;
     height: 50vh;
     background: var(--purpleClaro);
     border-radius: 15px;
+    padding: 1.1rem;
+    text-align: center;
+    transition: 0.25s;
+
+    cursor: pointer;
 }
 
+.secaoBeneficios .cardsBeneficios .card:hover
+{
+    background: var(--purpleClaroHover);	
+
+   	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+.secaoBeneficios .cardsBeneficios .card #titulo_card{
+    font-size: 3rem;
+
+    color: var(--white);
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.secaoBeneficios .cardsBeneficios .card .icon_card
+{
+    font-size: 5rem;
+    color: var(--white);
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.secaoBeneficios .cardsBeneficios .card:hover .icon_card{
+    opacity: 1;
+}
+
+.secaoBeneficios .cardsBeneficios .card p
+{
+    color: var(--white);
+    font-weight: 500;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.secaoBeneficios .cardsBeneficios .card:hover #titulo_card,
+.secaoBeneficios .cardsBeneficios .card:hover p,
+.secaoBeneficios .cardsBeneficios .card:hover a{
+    opacity: 1;
+}
+
+.secaoForms
+{
+    margin-top: 6em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--blackSecao);
+    color: var(--white);
+    height: 90vh;
+
+    padding: 5rem;
+}
+
+.secaoForms .divForms
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.secaoForms .divForms .boxFormulario
+{
+    background: var(--cinzaForms);
+
+    padding: 2rem;
+    width: 80vh;
+    height: 50vh;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.secaoForms .divForms .contentForms
+{
+    width: 50vh;
+    color: #fff;
+}
+
+
+.secaoForms .divForms .contentForms #formulario input[type=radio],
+.secaoForms .divForms .contentForms #formulario input[type=text]
+
+
+
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+  }
+  
+  
