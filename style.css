@@ -18,6 +18,7 @@
     --purpleDestaque:  #FF00B8;
     --blackSecao: #151515;
     --cinzaForms: #767676;
+    --cinzaBackgroundForms: #bdbdbd;
 }
 
 
@@ -32,6 +33,11 @@
 .linhaBlock
 {
     display: block;
+}
+
+.linhaInline
+{
+    display: inline;
 }
 
 #CTA{
@@ -416,24 +422,100 @@ header nav .nav-list .nav-item a:hover
     background: var(--cinzaForms);
 
     padding: 2rem;
-    width: 80vh;
-    height: 50vh;
+    width: 70%;
+    height: 50%;
     border-radius: 15px;
     text-align: center;
+    z-index: 2;
 }
+
+.secaoForms .divForms .boxFormulario > h2
+{
+    font-size: 2.5rem;
+}
+
 
 
 .secaoForms .divForms .contentForms
 {
-    width: 50vh;
+    width: 80vh;
     color: #fff;
 }
 
+.secaoForms .divForms .contentForms > h1
+{
+    font-size: 6rem;
+}
 
-.secaoForms .divForms .contentForms #formulario input[type=radio],
-.secaoForms .divForms .contentForms #formulario input[type=text]
+.boxFormulario #formulario #input_set
+{
+    width: 90%;
+    margin-top: 1.3rem;
+    
+    font-size: 1.2rem;
+    border-radius: 40px;
+    border: 1px solid var(--cinzaForms);
+    background: var(--cinzaBackgroundForms);
+    color: var(--silverEscuro);
+
+    outline: none;
+    padding: 10px 15px;
+}
 
 
+.boxFormulario #formulario .btnBackColor
+{
+    background: var(--purpleDestaque);
+    border: 2px solid var(--purpleDestaque);
+    transition: 0.2s;
+}
+
+.boxFormulario #formulario .btnBackColor:hover
+{
+    background: none;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 15px;
+    text-decoration: none;
+   
+}
+
+.boxFormulario #formulario .textArea_set
+{
+    width: 90%;
+    margin-top: 1.3rem;
+    
+    font-size: 1rem;
+    border-radius: 20px;
+    border: 1px solid var(--cinzaForms);
+    background: var(--cinzaBackgroundForms);
+    color: var(--silverEscuro);
+    resize: none;
+
+    outline: none;
+    padding: 15px 25px;
+}
+
+.boxFormulario #formulario .select_set
+{
+    width: 25vh;
+    margin-top: 1.3rem;
+    
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid var(--cinzaForms);
+    background: var(--cinzaBackgroundForms);
+    color: var(--silverEscuro);
+
+    outline: none;
+    padding: 10px 15px;
+}
+
+.boxFormulario #formulario #label_set
+{
+    font-size: 1.3rem;
+    text-align: left;
+}
 
 
 @-webkit-keyframes scale-up-center {
