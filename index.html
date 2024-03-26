@@ -26,159 +26,176 @@
         </a>
     </div>
 
-    <main class="banner">
-        <!-- Menu -->
-        <header>
-            <nav>
-                <a href="" id="logo"><img src="assets/Image/logo.svg" alt="logo" id="img_logo"></a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Emprestimo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#">Investimento</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#">Fale Conosco</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" id="loginUser">Login<ion-icon name="exit-outline" id="iconEntrar"></ion-icon></a>
-                    </li>
-                </ul>   
-            </nav>
-        </header>
-        
-        <!-- Aqui irá vim todo o conteudo do CTA-->
-        <div class="content">
-            <div class="contentIlustra">
-                <img src="./assets/Image/imagem.png" id="imagemIlus">
-            </div>
-            <div class="contentText">
-                <h1 id="tituloPrincipal">HEPE</h1>
-                <p id="descricao">O banco digital que é a sua cara!</p>
-                <!-- <button onclick="topFunction()" id="mybtn">Teste</button> -->
-                <a href="#FlexContainer" id="CTA">Conferir</a>
-            </div>
-        </div>
-        
-        <div class="contentSecao">
-            <h1 id="tituloSecao">Seção Teste</h1>
-                <div class="FlexContainer" id="FlexContainer">
-                    <div class="blocoEmprestimo">
-                        <div class="cardFotos">
-                            <div class="fotoHeloisa">
-                                <img src="assets/Image/foto_helo.png" alt="" class="img_perfil">
-                                <h2>Heloisa</h2>
-                            </div>
-                            <div class="iconMais">
-                                <img src="assets/Image/mais.png" alt="">
-                            </div>
-                            <div class="fotoFilipe">
-                                <img src="assets/Image/foto_lipe.png" alt="" class="img_perfil">
-                                <h2>Filipe</h1>
-                            </div>
-                        </div>
-                        <p>Lorem Ipsum is simply dummy text
-                            of the printing and typesetting industry. 
-                            Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s.
-                            Lorem Ipsum has been the industry's 
-                            standard dummy text ever since the 1500s </p>
-                    </div>
-                    <div class="blocoInvestimento">
-                        <h2 id="principal2">Titulo da História</h2>
-                        <p id="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
-                         maxime ut veniam repellat sed aliquid, itaque quasi sequi enim dolorem expedita,
-                         temporibus suscipit at? Quos, provident. </br> </br>
-                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                         Lorem Ipsum has been the industry's standard dummy text ever since the 
-                         1500s. Lorem Ipsum has been the industry's standard dummy text ever since
-                         the 1500s.
-                        </p>
-                         <a href="#" id="CTA">Saiba Mais!</a>
-                   </div>
-                </div>
-        </div>
-    </main>
-
-    <!-- Seção para beneficios -->
-    <div class="secaoBeneficios">
-        <h1>Benefícios</h1>
-        <div class="cardsBeneficios">
-            <div class="card">
-                <ion-icon name="airplane-outline" class="icon_card"></ion-icon>
-                <h1 id="titulo_card">Preço</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
-            </div>
-            <div class="card">
-                <ion-icon name="bag-outline" class="icon_card"></ion-icon>
-                <h1 id="titulo_card">Medo</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
-            </div>
-            <div class="card">
-                <ion-icon name="bulb-outline" class="icon_card"></ion-icon>
-                <h1 id="titulo_card">Abundante</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
-            </div>
-            <div class="card">
-                <ion-icon name="cloud-done-outline" class="icon_card"></ion-icon>
-                <h1 id="titulo_card">Verdade</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
-            </div>
-        </div>
+    <div class="productEspec w3-animate-zoom">
+        <button onclick="closeEspec()"><i class="bx bx-x-circle"></i>X</button>
+        <h2>Obrigado!</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi consequatur magnam dolores rem culpa qui, ex assumenda tempore doloribus non!</p>
     </div>
 
-     <!-- Seção com formulário--> 
-     <section class="secaoForms">
-        <div class="divForms">
-            <div class="boxFormulario">
-                <h2>Suporte</h2>
-                <form action="" id="formulario">
-                    <div class="linhaBlock">
-                        <input type="text" name="nome" id="input_set" value="" placeholder="Nome">
-                    </div>
-    
-                    
-                    <div class="linhaBlock">
-                        <input type="email" name="email" value="" id="input_set" placeholder="E-mail">
-                    </div>
+    <!--<div class="popup popup_desativado">
+        <div class="boxPopup">
+            <h2>Obrigado por enviar o formulário</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, incidunt ipsa aliquid eum ratione esse?</p>
+        </div>
+    </div>-->
 
-
-                    <div class="linhaInline">
-                    <label for="" id="label_set">Precisa de ajuda em que?</label>
-                        <select name="" id="" class="select_set">
-                            <option value="1" disabled selected></option>
-                            <option value="2">Cartão</option>
-                            <option value="3">Abertura de conta</option>
-                            <option value="4" >Aplicativo</option>
-                        </select>
-                    </div>
-                    <!--<div class="linhaBlock">
-                        <input type="radio" id="prototipo_sim">
-                        <label for="prototipo_sim">Masculino</label>
-                        <input type="radio" id="prototipo_sim">
-                        <label for="prototipo_sim">Feminino</label>
-                    </div>-->
-
-                    <div class="linhaBlock">
-                        <textarea name="" class="textArea_set" id="" cols="30" rows="10" placeholder="Especifique aqui o seu problema..."></textarea>
-                    </div>
-
-                    <div class="linhaBlock">
-                        <a href="" id="CTA" class="btnBackColor">Enviar</a>
-                    </div>
-                </form>
+    <div class="corpo_geral">
+        <main class="banner">
+            <!-- Menu -->
+            <header>
+                <nav>
+                    <a href="" id="logo"><img src="assets/Image/logo.svg" alt="logo" id="img_logo"></a>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Emprestimo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Investimento</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="#">Fale Conosco</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" id="loginUser">Login<ion-icon name="exit-outline" id="iconEntrar"></ion-icon></a>
+                        </li>
+                    </ul>   
+                </nav>
+            </header>
+            
+            <!-- Aqui irá vim todo o conteudo do CTA-->
+            <div class="content">
+                <div class="contentIlustra">
+                    <img src="./assets/Image/imagem.png" id="imagemIlus">
+                </div>
+                <div class="contentText">
+                    <h1 id="tituloPrincipal">HEPE</h1>
+                    <p id="descricao">O banco digital que é a sua cara!</p>
+                    <!-- <button onclick="topFunction()" id="mybtn">Teste</button> -->
+                    <a href="#FlexContainer" id="CTA">Conferir</a>
+                </div>
             </div>
             
-            <div class="contentForms">
-                <h1>Precisa de ajuda?</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vero facilis dolore nobis, excepturi atque. Dignissimos totam veniam quidem minus. Cumque quibusdam explicabo laudantium nesciunt.</p>
+            <div class="contentSecao">
+                <h1 id="tituloSecao">Seção Teste</h1>
+                    <div class="FlexContainer" id="FlexContainer">
+                        <div class="blocoEmprestimo">
+                            <div class="cardFotos">
+                                <div class="fotoHeloisa">
+                                    <img src="assets/Image/foto_helo.png" alt="" class="img_perfil">
+                                    <h2>Heloisa</h2>
+                                </div>
+                                <div class="iconMais">
+                                    <img src="assets/Image/mais.png" alt="">
+                                </div>
+                                <div class="fotoFilipe">
+                                    <img src="assets/Image/foto_lipe.png" alt="" class="img_perfil">
+                                    <h2>Filipe</h1>
+                                </div>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text
+                                of the printing and typesetting industry. 
+                                Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s.
+                                Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s </p>
+                        </div>
+                        <div class="blocoInvestimento">
+                            <h2 id="principal2">Titulo da História</h2>
+                            <p id="descricao">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis,
+                            maxime ut veniam repellat sed aliquid, itaque quasi sequi enim dolorem expedita,
+                            temporibus suscipit at? Quos, provident. </br> </br>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 
+                            1500s. Lorem Ipsum has been the industry's standard dummy text ever since
+                            the 1500s.
+                            </p>
+                            <a href="#" id="CTA">Saiba Mais!</a>
+                    </div>
+                    </div>
+            </div>
+        </main>
+
+        <!-- Seção para beneficios -->
+        <div class="secaoBeneficios">
+            <h1>Benefícios</h1>
+            <div class="cardsBeneficios">
+                <div class="card">
+                    <ion-icon name="airplane-outline" class="icon_card"></ion-icon>
+                    <h1 id="titulo_card">Preço</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
+                </div>
+                <div class="card">
+                    <ion-icon name="bag-outline" class="icon_card"></ion-icon>
+                    <h1 id="titulo_card">Medo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
+                </div>
+                <div class="card">
+                    <ion-icon name="bulb-outline" class="icon_card"></ion-icon>
+                    <h1 id="titulo_card">Abundante</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
+                </div>
+                <div class="card">
+                    <ion-icon name="cloud-done-outline" class="icon_card"></ion-icon>
+                    <h1 id="titulo_card">Verdade</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, repudiandae!</p>
+                </div>
             </div>
         </div>
-     </section>
+
+        <!-- Seção com formulário--> 
+        <section class="secaoForms" id="btn_ancora">
+            <div class="divForms">
+                <div class="boxFormulario">
+                    <h2>Suporte</h2>
+                    <form action="" id="formulario">
+                        <div class="linhaBlock">
+                            <input type="text" name="nome" id="input_set" value="" placeholder="Nome" class="input_nome">
+                        </div>
+        
+                        
+                        <div class="linhaBlock">
+                            <input type="email" name="email" value="" id="input_set" placeholder="E-mail">
+                        </div>
+                        
+
+                        <div class="linhaInline">
+                        <label for="" id="label_set">Precisa de ajuda em que?</label>
+                            <select name="" id="" class="select_set">
+                                <option value="1" disabled selected></option>
+                                <option value="2">Cartão</option>
+                                <option value="3">Abertura de conta</option>
+                                <option value="4" >Aplicativo</option>
+                            </select>
+                        </div>
+                        <!--<div class="linhaBlock">
+                            <input type="radio" id="prototipo_sim">
+                            <label for="prototipo_sim">Masculino</label>
+                            <input type="radio" id="prototipo_sim">
+                            <label for="prototipo_sim">Feminino</label>
+                        </div>-->
+
+                        <div class="linhaBlock">
+                            <textarea name="" class="textArea_set" id="" cols="30" rows="10" placeholder="Especifique aqui o seu problema..."></textarea>
+                        </div>
+
+                        <div class="linhaBlock">
+                            <button id="btn_forms"  class="btn_cta_forms" onclick="showEspecs()">
+                                <a href="#btn_ancora" id="CTA" class="btnBackColor">Enviar</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="contentForms">
+                    <h1>Precisa de ajuda?</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vero facilis dolore nobis, excepturi atque. Dignissimos totam veniam quidem minus. Cumque quibusdam explicabo laudantium nesciunt.</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
